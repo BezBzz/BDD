@@ -1,6 +1,5 @@
 package ru.netology.page;
 
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import ru.netology.data.DataHelper;
 
@@ -25,9 +24,5 @@ public class TransferPage {
         $(transferButton).click();
         return new DashboardPage();
     }
-
-    public void notificationError() {
-        wrongAmount.shouldBe(Condition.visible)
-                .shouldHave(Condition.text("Превышен лимит доступных средств"));
-    }
 }
+

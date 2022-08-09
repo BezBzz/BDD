@@ -70,7 +70,7 @@ public class MoneyTransferTest {
 
     @Test
     void transferFromSecondCardsToFirstCardsUnderLimit() {
-        var transferAmount = 1000000;
+        var transferAmount = 2000;
         var dashboardBefore = new LoginPage()
                 .validLogin(getAuthInfo())
                 .validVerify(getVerificationCodeFor(getAuthInfo()));
